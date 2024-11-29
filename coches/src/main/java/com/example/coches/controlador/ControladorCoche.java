@@ -1,5 +1,9 @@
 package com.example.coches.controlador;
 
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+>>>>>>> b79a1d3 (Tabla de coches)
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,4 +44,14 @@ public class ControladorCoche {
 		 }
 	 }
 	 
+<<<<<<< HEAD
+=======
+	 @GetMapping("/coches")
+	 public String coches(Model model) {
+		 List<Coche> coches = servicioCoches.obtenerTodos();
+		 //List<Coche> coches = new ArrayList<Coche>();
+		 model.addAttribute("coches", coches);
+		 return "coches";
+	 }
+>>>>>>> b79a1d3 (Tabla de coches)
 }
